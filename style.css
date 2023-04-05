@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+  display: grid;
+  grid-template:
+    "h1 h1 h1"
+    "flag flag nav";
+  background-color: rgb(41, 56, 66);
+}
+
+h1 {
+  grid-area: h1;
+  color: white;
+  background-color: rgb(44, 75, 105);
+  padding: 20px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(41, 56, 66);
+  display: grid;
+  padding: 5px;
+  align-items: center;
+  justify-content: right;
+  margin-right: 5px;
+}
+
+nav ul li {
+  color: white;
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+  border: 2px black solid;
+  border-radius: 15%;
+  background-color: rgba(252, 42, 42, 0.877);
+}
+
+a:hover {
+  color: white;
+}
+
+header img {
+  grid-area: flag;
+  padding: 10px;
+}
+
+img:hover {
+  transform: rotate(180deg);
+  transition: all 0.8s ease-in-out 0s;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template: "left middle right";
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/61ff041174e397bc3e37fa84/Aerial-View-on-Zermatt-Valley-and-Matterhorn-Peak-at-Dawn/960x0.jpg?format=jpg&width=960");
+}
+
+.card {
+  color: white;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 2px black;
+  border: rgb(26, 26, 54) 2px solid;
+  height: 300px;
+  padding: 15px;
+}
+
+footer {
+  color: white;
+  background-color: rgba(20, 60, 100, 0.993);
+  padding: 10px;
+}
+
+.form {
+  color: white;
+  padding: 15px;
+  background-color: rgb(41, 56, 66);
+}
+
+.button {
+  font-size: larger;
+  padding: 3px;
+}
+
+button:hover {
+  background-color: rgb(105, 218, 105);
+}
+
+@media screen and (max-width: 340px) {
+  * {
+    background-color: pink;
+  }
+}
